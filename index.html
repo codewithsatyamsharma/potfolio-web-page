@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyam Sharma - Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated Grid Background -->
+  <div class="grid-bg"></div>
+  
+  <!-- Floating Navigation Dock -->
+  <nav id="dockNav" class="dock-nav">
+    <div class="dock-container">
+      <a href="#home" class="dock-icon nav-link active" data-section="home">
+        <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
+        </svg>
+        <span class="label">Home</span>
+      </a>
+      <a href="#about" class="dock-icon nav-link" data-section="about">
+        <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/>
+        </svg>
+        <span class="label">About</span>
+      </a>
+      <a href="#stack" class="dock-icon nav-link" data-section="stack">
+        <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"/>
+        </svg>
+        <span class="label">Stack</span>
+      </a>
+      <a href="#work" class="dock-icon nav-link" data-section="work">
+        <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/>
+        </svg>
+        <span class="label">Work</span>
+      </a>
+      <a href="#contact" class="dock-icon nav-link" data-section="contact">
+        <svg class="icon" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+        </svg>
+        <span class="label">Connect</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title  glitch">
+        SATYAM<br>SHARMA
+      </h1>
+      <div class="typewriter-container">
+        <h2 class="typewriter-text">
+          <span id="typewriter"></span>
+          <span class="typewriter-cursor"></span>
+        </h2>
+      </div>
+      <p class="hero-description">
+        Crafting digital experiences with precision, purpose, and a touch of magic
+      </p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn btn-primary">
+          View Projects →
+        </a>
+        <a href="Satyam_Sharma_Frontend_Developer_Resume.pdf" download="Satyam_Sharma_Frontend_Developer_Resume.pdf" class="btn btn-secondary">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="terminal-card glass reveal">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+            </div>
+            <div class="terminal-body">
+              <p class="terminal-line"><span class="prompt">$</span> whoami</p>
+              <p class="terminal-output">> satyam_sharma</p>
+              
+              <p class="terminal-line"><span class="prompt">$</span> cat profile.txt</p>
+              <p class="terminal-output">> CS Undergraduate</p>
+              <p class="terminal-output">> G.H. Raisoni College Of Engineering</p>
+              
+              <p class="terminal-line"><span class="prompt">$</span> npm start</p>
+              <p class="terminal-output success">> Building amazing experiences...</p>
+              <p class="terminal-output dim">> Server running on localhost:3000</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-content reveal">
+          <h2 class="section-title">
+            Engineering <span class="gradient-text">Clarity</span>.
+          </h2>
+          <p class="about-text">
+            I am a Computer Science undergraduate at G.H. Raisoni College of Engineering. I don't just write code; I build tools that focus on clean UI, basic security, and reliable functionality. Currently seeking entry-level software engineering roles where I can contribute meaningful solutions.
+          </p>
+          <div class="status-badge">
+            <div class="status-indicator"></div>
+            <span class="status-text">Open to Work: Hybrid / Remote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section id="stack" class="stack-section">
+    <div class="container">
+      <h2 class="section-title-center reveal">
+        Tech <span class="gradient-text">Stack</span>
+      </h2>
+      <div class="stack-grid">
+        
+        <!-- Core Card -->
+        <div class="tech-card reveal" style="animation-delay: 0.1s">
+          <div class="tech-card-inner">
+            <div class="tech-card-front">
+              <svg class="tech-icon" fill="currentColor" viewBox="0 0 20 20" style="color: #fbbf24;">
+                <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+              <h3 class="tech-title">The Core</h3>
+              <p class="tech-subtitle">JavaScript & Java</p>
+            </div>
+            <div class="tech-card-back">
+              <pre class="code-preview"><code>const dev = {
+  lang: ['JS', 'Java'],
+  level: 'Advanced',
+  focus: 'ES6+',
+  passion: true
+};</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend Card -->
+        <div class="tech-card reveal" style="animation-delay: 0.2s">
+          <div class="tech-card-inner">
+            <div class="tech-card-front">
+              <svg class="tech-icon" fill="currentColor" viewBox="0 0 20 20" style="color: #60a5fa;">
+                <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/>
+              </svg>
+              <h3 class="tech-title">Frontend</h3>
+              <p class="tech-subtitle">HTML5, CSS3, Tailwind</p>
+            </div>
+            <div class="tech-card-back">
+              <pre class="code-preview"><code>&lt;div className="
+  flex items-center
+  justify-center
+  bg-gradient-to-r
+  hover:scale-105
+"&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- System Card -->
+        <div class="tech-card reveal" style="animation-delay: 0.3s">
+          <div class="tech-card-inner">
+            <div class="tech-card-front">
+              <svg class="tech-icon" fill="currentColor" viewBox="0 0 20 20" style="color: #4ade80;">
+                <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"/>
+              </svg>
+              <h3 class="tech-title">The System</h3>
+              <p class="tech-subtitle">Linux, Bash, Shell</p>
+            </div>
+            <div class="tech-card-back">
+              <pre class="code-preview"><code>#!/bin/bash
+sudo apt update
+chmod +x run.sh
+./deploy.sh</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Card -->
+        <div class="tech-card reveal" style="animation-delay: 0.4s">
+          <div class="tech-card-inner">
+            <div class="tech-card-front">
+              <svg class="tech-icon" fill="currentColor" viewBox="0 0 20 20" style="color: #c084fc;">
+                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+              </svg>
+              <h3 class="tech-title">Tools</h3>
+              <p class="tech-subtitle">Git, SSH, Figma</p>
+            </div>
+            <div class="tech-card-back">
+              <pre class="code-preview"><code>git commit -m "✨"
+ssh user@server
+figma export ++</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Works Section -->
+  <section id="work" class="work-section">
+    <div class="container-wide">
+      <h2 class="section-title-center reveal">
+        Selected <span class="gradient-text">Works</span>
+      </h2>
+      <div class="projects-scroll">
+        
+        <!-- Project 1 -->
+        
+
+        <div class="project-card">
+          <div class="project-preview">
+            <!-- <div class="mobile-mockup">
+              <div class="mobile-notch"></div>
+              <div class="mobile-content">
+                <div class="mobile-icon">📱</div>
+                <div class="mobile-text">
+                  <div>Responsive</div>
+                  <div class="mobile-text-small">Algorithmic Pathfinding Visualizer</div>
+                </div>
+              </div>
+              <div class="mobile-indicator"></div>
+            </div> -->
+            <img class="algo_img" src="SCR-20260119-pagy.png" alt="">
+          </div>
+          <h3 class="project-title">TaskFlow</h3>
+          <p class="project-description">Browser-based task management with modular JS functions and local state handling. Features include drag-and-drop, filtering, and persistence.</p>
+          <div class="project-tags">
+            <span class="tag tag-purple">#Html</span>
+            <span class="tag tag-purple">#CSS</span>
+            <span class="tag tag-purple">#JavaScript</span>
+          </div>
+          
+          <a href="#" class="project-link project-link-purple btn btn-primary">View Project →</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-preview">
+            <!-- <div class="mobile-mockup">
+              <div class="mobile-notch"></div>
+              <div class="mobile-content">
+                <div class="mobile-icon">📱</div>
+                <div class="mobile-text">
+                  <div>Responsive</div>
+                  <div class="mobile-text-small">Algorithmic Pathfinding Visualizer</div>
+                </div>
+              </div>
+              <div class="mobile-indicator"></div>
+            </div> -->
+            <img class="algo_img" src="path_tracking algorithm .png" alt="">
+          </div>
+          <h3 class="project-title">Algorithmic Pathfinding Visualizer</h3>
+          <p class="project-description">An interactive graph-theory visualizer showcasing advanced algorithms, maze generation, and weighted pathfinding through a high-performance, modular technical architecture.</p>
+          <div class="project-tags">
+            <span class="tag tag-purple">#Html</span>
+            <span class="tag tag-purple">#CSS</span>
+            <span class="tag tag-purple">#JavaScript</span>
+          </div>
+          
+          <a href="#" class="project-link project-link-purple btn btn-primary">View Project →</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-preview">
+            <!-- <div class="mobile-mockup">
+              <div class="mobile-notch"></div>
+              <div class="mobile-content">
+                <div class="mobile-icon">📱</div>
+                <div class="mobile-text">
+                  <div>Responsive</div>
+                  <div class="mobile-text-small">Portfolio</div>
+                </div>
+              </div>
+              <div class="mobile-indicator"></div>
+            </div> -->
+            <img class="algo_img" src="SCR-20260119-bzjj.png" alt="">
+          </div>
+          <h3 class="project-title">Personal Portfolio V1</h3>
+          <p class="project-description">Mobile-first responsive layout built with semantic HTML and utility-first Tailwind CSS, featuring smooth animations and WCAG compliance.</p>
+          <div class="project-tags">
+            <span class="tag tag-purple">#Tailwind</span>
+            <span class="tag tag-purple">#Responsive</span>
+            <span class="tag tag-purple">#WCAG</span>
+          </div>
+          
+          <a href="index.html" class="project-link project-link-purple btn btn-primary">View Project →</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-preview project-terminal">
+            <pre class="terminal-preview"><code>$ ./system_check.sh
+> Checking system status...
+> ━━━━━━━━━━━━━━━━━━━━━━━━
+> CPU: 45% ████████░░ 
+> RAM: 2.1GB/8GB ███░░░░░░░
+> Disk: 120GB free
+> Network: Connected ✓
+> Services: All running ✓
+> Last backup: 2 hours ago
+> ━━━━━━━━━━━━━━━━━━━━━━━━
+✓ System health: OPTIMAL</code></pre>
+          </div>
+          <h3 class="project-title">System Utilities Playground</h3>
+          <p class="project-description">Automating repetitive Linux tasks with shell scripts, handling file permissions, process monitoring, and system diagnostics.</p>
+          <div class="project-tags">
+            <span class="tag tag-purple">#Bash</span>
+            <span class="tag tag-purple">#Linux</span>
+            <span class="tag tag-purple">#ShellScripting</span>
+          </div>
+          <a href="#" class="project-link project-link-purple btn btn-primary">View Project →</a>
+        </div>
+
+        
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <h2 class="contact-title reveal">
+          Ready to <span class="gradient-text">Collaborate</span>?
+        </h2>
+        <p class="contact-subtitle reveal">
+          Let's build something amazing together. I'm always open to discussing new projects and opportunities.
+        </p>
+        
+        <button id="copyEmail" class="btn-copy reveal">
+          <span id="emailText" class="btn-copy-content">
+            <svg class="btn-icon" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+            </svg>
+            Copy Email Address
+          </span>
+        </button>
+        
+        <p class="email-display">satyamsharma22@gmail.com</p>
+        <p class="location">📍 Vasai-Virar, Palghar, India</p>
+        
+        <div class="social-links reveal">
+          <a href="https://github.com/codewithsatyamsharma" target="_blank" class="social-link" aria-label="GitHub">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/satyam-sharma-50600524b" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <!-- <a href="https://twitter.com/satyamsharma" target="_blank" class="social-link" aria-label="Twitter">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a> -->
+        </div>
+        
+        <div class="footer-card glass reveal">
+          <p class="footer-text">
+            Built with passion using HTML, CSS, and vanilla JavaScript. 
+            Designed for performance, accessibility, and a premium user experience.
+          </p>
+          <p class="copyright">© 2026 Satyam Sharma. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
